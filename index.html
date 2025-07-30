@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rabii Zoumih | Chaudronnier</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#Location">Location</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <section id="intro">
+    <div class="intro-overlay">
+      <h1>Rabii Zoumih</h1>
+      <p>Professional welder</p>
+    </div>
+  </section>
+</main>
+
+
+    <section id="about">
+  <h2>About Me</h2>
+  <div class="about-container">
+    <img src="WhatsApp Image 2025-07-30 à 18.50.53_50aec1ee.jpg" alt="Rabii Zoumih" class="profile-photo" />
+    <div class="about-text">
+     <p>
+  I’m <strong>Rabii Zoumih</strong>, a metal construction specialist with over 15 years of hands-on experience in the field.
+  As a skilled welder, I work across a range of areas including metal construction, structural frameworks,
+  and industrial piping systems. My expertise includes post-welding, flame cutting, tube bending, drilling,
+  and precise metal tracing. I prioritize both <strong>precision</strong> and <strong>safety</strong> in every project I take on.
+  Over the years, I’ve contributed to high-impact works like fixed parts for water dams, demonstrating reliability
+  and craftsmanship. I’m passionate about building strong, long-lasting metal structures that meet industry
+  standards and client expectations.
+</p>
+
+    </div>
+  </div>
+</section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+        <img src="wh.jpg" alt="Project 1" class="project-img" onclick="showFull(this)" data-full="wh.jpg">
+          <h3>Metal Structure</h3>
+          <p>Custom-built metal framework for industrial use.</p>
+        </div>
+        <div class="project-card">
+        <img src="design-of-steel-structure-workshop.jpg" alt="Project 1" class="project-img" onclick="showFull(this)" data-full="design-of-steel-structure-workshop.jpg">
+          <h3>Metal Structure</h3>
+          <p>Custom-built metal framework for industrial use.</p>
+        </div>
+        <div class="project-card">
+        <img src="WhatsApp Image 2025-07-30 à 19.28.06_bacf26bc.jpg" alt="Project 1" class="project-img" onclick="showFull(this)" data-full="WhatsApp Image 2025-07-30 à 19.28.06_bacf26bc.jpg">
+          <h3>Metal Structure</h3>
+          <p>Custom-built metal framework for industrial use.</p>
+        </div>
+        <!-- More project cards can go here -->
+      </div>
+    </section>
+
+    <section id="Location">
+      <h2>Location</h2>
+      <p>Based in Kenitra, Morocco</p>
+
+      <!-- Google Map Embed -->
+     <div class="map-container">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13189.898100763177!2d-6.57679919054338!3d34.26194981925608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda757001cd76ad9%3A0x3e27b8584fb84b2b!2sSoudeur%20rabii%20et%20miloud!5e0!3m2!1sen!2sma!4v1753843510416!5m2!1sen!2sma" width="100%" height="400" style="border:0;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+    </section>
+
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p class="contact-message">If you’re interested in working together or have any questions, feel free to reach out.</p>
+  <div class="contact-button-container">
+    <a href="mailto:soudeur.elmahba@gmail.com" class="contact-button">Send Me an Email</a>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+  <div class="social-footer">
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="social-icon"></a>
+    <a href="https://www.instagram.com/yourusername" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="social-icon">
+    </a>
+    <a href="https://wa.me/212613323838" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="social-icon">
+    </a>
+  </div>
+  <p>© 2025 Rabii Zoumih. All rights reserved.</p>
+</footer>
+
+<div id="lightbox" onclick="hideFull()">
+  <img id="lightbox-img" src="" alt="Full Image">
+</div>
+
+
+</body>
+</html>

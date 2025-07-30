@@ -1,0 +1,286 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f1f1f1;
+  color: #1e1e1e;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #3ca0e7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+header {
+  background-color: #ffffff;
+  padding: 20px 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 25px;
+}
+
+nav a {
+  color: #1e3f66;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #3ca0e7;
+}
+
+/* Hero Section */
+#intro {
+  position: relative;
+  background: url('welder-working-night.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-overlay {
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay for readability */
+  padding: 40px;
+  border-radius: 10px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.intro-overlay h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.intro-overlay p {
+  font-size: 1.5rem;
+}
+
+/* Section Styling */
+section {
+  padding: 80px 40px;
+  background-color: #ffffff;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #3ca0e7;
+}
+
+/* About Section */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-photo {
+  width: 320px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.about-text {
+  max-width: 650px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Projects */
+#projects {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #004d80;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  z-index: 10; /* ensure image pops above siblings */
+}
+
+.project-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card h3 {
+  color: #004d80;
+  font-size: 1.2em;
+  margin: 15px 0 5px;
+}
+
+.project-card p {
+  font-size: 0.95em;
+  padding: 0 15px 20px;
+  color: #444;
+}
+
+/* Contact & Map */
+.map-container {
+  margin: 30px 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.social-footer {
+  margin-bottom: 15px;
+}
+
+.social-footer img.social-icon {
+  width: 32px;
+  height: 32px;
+  margin: 0 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-footer img.social-icon:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
+/* Footer */
+footer {
+  background: #1e1e1e;
+  color: #cccccc;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 0.95rem;
+  margin-top: 40px;
+}
+
+.contact-button-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.contact-button {
+  display: inline-block;
+  background-color: #3ca0e7;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #1e3f66;
+}
+
+.contact-message {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #1e3f66;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Lightbox styles */
+#lightbox {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 1000;
+  cursor: pointer;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .intro-overlay h1 {
+    font-size: 3rem;
+  }
+
+  .intro-overlay p {
+    font-size: 1.2rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  section {
+    padding: 50px 20px;
+  }
+}
