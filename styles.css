@@ -25,26 +25,46 @@ a {
 /* Header */
 header {
   background-color: #ffffff;
-  padding: 20px 40px;
+  padding: 10px 40px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-#navbar a {
-color: #e0c97f;
-text-decoration: none;
-font-weight: bold;
-font-size: 1.1rem;
-transition: color 0.3s;
+/* Navbar container fix */
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px; /* keep navbar centered and not too wide */
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
+/* Navbar links */
+#navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px; /* space between links */
+  justify-content: flex-end;
+}
+
+#navbar li {
+  display: inline-block;
+}
+
+#navbar a {
+  color: #1e3f66; /* dark blue */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
 
 #navbar a:hover {
-color: #fff;
+  color: #3ca0e7; /* light blue on hover */
 }
-
 
 /* Hero Section */
 #intro {
@@ -280,56 +300,7 @@ footer {
   section {
     padding: 50px 20px;
   }
-}
 
-/* Logo Fix */
-.nav-logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  height: 60px; /* slightly bigger but balanced */
-  width: auto;
-  display: block;
-}
-
-/* Navbar container fix */
-#navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px; /* keep navbar centered and not too wide */
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Navbar links */
-#navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 25px; /* space between links */
-  justify-content: flex-end;
-}
-
-#navbar li {
-  display: inline-block;
-}
-
-/* Navbar links colors (same as screenshot) */
-#navbar a {
-  color: #1e3f66; /* dark blue */
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: color 0.3s;
-}
-
-#navbar a:hover {
- color: #3ca0e7; light blue on hover */
-}
-
-@media (max-width: 768px) {
   .logo {
     height: 40px; /* smaller on mobile */
   }
@@ -346,3 +317,14 @@ footer {
   }
 }
 
+/* Logo Fix */
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px; /* slightly bigger but balanced */
+  width: auto;
+  display: block;
+}
