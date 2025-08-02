@@ -32,12 +32,13 @@ header {
   z-index: 1000;
 }
 
-nav ul {
+#navbar ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center; /* center horizontally */
   list-style: none;
   gap: 25px;
 }
+
 
 nav a {
   color: #1e3f66;
@@ -284,3 +285,4 @@ footer {
     padding: 50px 20px;
   }
 }
+
