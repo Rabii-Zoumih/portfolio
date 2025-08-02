@@ -290,7 +290,7 @@ footer {
 }
 
 .logo {
-  height: 80px; /* bigger logo */
+  height: 60px; /* slightly bigger but balanced */
   width: auto;
   display: block;
 }
@@ -300,25 +300,25 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1100px; /* limit navbar width */
-  margin: 0 auto; /* center navbar */
-  padding: 0 20px; /* inner spacing */
+  max-width: 1200px; /* keep navbar centered and not too wide */
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Navbar links */
 #navbar ul {
   list-style: none;
   display: flex;
-  gap: 20px; /* spacing between links */
+  gap: 20px; /* space between links */
 }
 
 #navbar li {
   display: inline-block;
 }
 
-/* Navbar links colors */
+/* Navbar links colors (same as screenshot) */
 #navbar a {
-  color: #e0c97f;
+  color: #1e3f66; /* dark blue */
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;
@@ -326,12 +326,12 @@ footer {
 }
 
 #navbar a:hover {
-  color: #3ca0e7; /* light blue hover fix */
+  color: #3ca0e7; /* light blue on hover */
 }
 
 @media (max-width: 768px) {
   .logo {
-    height: 40px; /* slightly smaller on mobile */
+    height: 40px; /* smaller on mobile */
   }
 
   #navbar {
