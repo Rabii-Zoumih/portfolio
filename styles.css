@@ -32,22 +32,60 @@ header {
   z-index: 1000;
 }
 
-nav ul {
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(20, 20, 20, 0.95);
+  padding: 0.5rem 2rem;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo img {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+
+.nav-links {
   list-style: none;
-  gap: 25px;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
-nav a {
-  color: #1e3f66;
+.nav-links a {
+  color: #e0c97f;
+  text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
+  font-size: 1.1rem;
+  transition: color 0.3s;
 }
 
-nav a:hover {
-  color: #3ca0e7;
+.nav-links a:hover {
+  color: #fff;
 }
+
+
+
+#navbar a {
+color: #e0c97f;
+text-decoration: none;
+font-weight: bold;
+font-size: 1.1rem;
+transition: color 0.3s;
+}
+
+
+
+#navbar a:hover {
+color: #fff;
+}
+
 
 /* Hero Section */
 #intro {
@@ -284,3 +322,4 @@ footer {
     padding: 50px 20px;
   }
 }
+
