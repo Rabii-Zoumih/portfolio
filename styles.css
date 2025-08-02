@@ -309,7 +309,8 @@ footer {
 #navbar ul {
   list-style: none;
   display: flex;
-  gap: 20px; /* space between links */
+  gap: 25px; /* space between links */
+  justify-content: flex-end;
 }
 
 #navbar li {
@@ -326,7 +327,7 @@ footer {
 }
 
 #navbar a:hover {
-  color: #3ca0e7; /* light blue on hover */
+ color: #3ca0e7; light blue on hover */
 }
 
 @media (max-width: 768px) {
