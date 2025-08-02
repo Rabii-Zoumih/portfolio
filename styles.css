@@ -25,7 +25,7 @@ a {
 /* Header */
 header {
   background-color: #ffffff;
-  padding: 10px 40px;
+  padding: 7px 40px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   position: sticky;
   top: 0;
@@ -302,7 +302,7 @@ footer {
   }
 
   .logo {
-    height: 40px; /* smaller on mobile */
+    height: 60px; /* smaller on mobile */
   }
 
   #navbar {
@@ -328,3 +328,4 @@ footer {
   width: auto;
   display: block;
 }
+
