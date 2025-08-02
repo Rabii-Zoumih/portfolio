@@ -290,7 +290,7 @@ footer {
 }
 
 .logo {
-  height: 80px; /* adjust based on design */
+  height: 80px; /* bigger logo */
   width: auto;
   display: block;
 }
@@ -300,6 +300,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1100px; /* limit navbar width */
+  margin: 0 auto; /* center navbar */
+  padding: 0 20px; /* inner spacing */
 }
 
 /* Navbar links */
@@ -313,6 +316,18 @@ footer {
   display: inline-block;
 }
 
+/* Navbar links colors */
+#navbar a {
+  color: #e0c97f;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+#navbar a:hover {
+  color: #3ca0e7; /* light blue hover fix */
+}
 
 @media (max-width: 768px) {
   .logo {
@@ -330,4 +345,3 @@ footer {
     margin-top: 10px;
   }
 }
-
