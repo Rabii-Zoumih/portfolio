@@ -324,9 +324,9 @@ footer {
 }
 
 .logo {
-  height: 90px; /* slightly bigger but balanced */
+  height: 50px; /* large enough to be visible but fits in thinner header */
   width: auto;
   display: block;
-}
+
 
 
