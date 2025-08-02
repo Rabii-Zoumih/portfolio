@@ -290,7 +290,7 @@ footer {
 }
 
 .logo {
-  height: 50px; /* adjust based on design */
+  height: 80px; /* adjust based on design */
   width: auto;
   display: block;
 }
@@ -330,3 +330,4 @@ footer {
     margin-top: 10px;
   }
 }
+
